@@ -4,11 +4,14 @@ const apiUrl = "http://localhost:3000";
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
+// let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
+let newDate = d.getMonth()+1 + '.' + d.getDate() + '.' + d.getFullYear();
 
 
 // Personal API Key for OpenWeatherMap API
-const apiKey = "2dc615a5d75785fe9579cc1d03a10bfc";
+// const apiKey = "2dc615a5d75785fe9579cc1d03a10bfc";
+const apiKey = "2dc615a5d75785fe9579cc1d03a10bfc&units=metric";
+
 
 // Event listener to add function to existing HTML DOM element
 document.getElementById('generate').addEventListener('click', onClick);
